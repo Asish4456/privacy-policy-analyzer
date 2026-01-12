@@ -1,5 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from backend.analyzer import analyze_policy
+from backend.utils import extract_text
 
 app = FastAPI()
 
