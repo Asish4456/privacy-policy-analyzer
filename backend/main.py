@@ -1,7 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from backend.analyzer import analyze_policy
-from backend.utils import extract_text
+from analyzer import analyze_policy
+from utils import extract_text_from_pdf
+from fastapi import UploadFile, File, Form
 
 app = FastAPI()
 
